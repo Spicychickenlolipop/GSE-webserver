@@ -3,6 +3,7 @@ Renders the final HTML report from analysis results.
 Uses Plotly for interactive charts (PCA scatter, volcano plot) embedded directly
 in the HTML — no server-side image rendering needed, works offline once loaded.
 """
+
 import json
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -14,8 +15,11 @@ def build_pca_chart_json(pca_result, group_labels=None):
     coords = pca_result["coords"]
     names = pca_result["sample_names"]
     import pandas as pd
-    labels = [group_labels.get(n, "unknown") if group_labels else "sample" for n in names]
-    labels = ['unknown' if pd.isna(label) else str(label) for label in labels]
+
+    labels = [
+        group_labels.get(n, "unknown") if group_labels else "sample" for n in names
+    ]
+    labels = ["unknown" if pd.isna(label) else str(label) for label in labels]
     return {
         "x": coords[:, 0].tolist(),
         "y": (coords[:, 1].tolist() if coords.shape[1] > 1 else [0] * len(names)),
@@ -29,6 +33,7 @@ def build_volcano_chart_json(de_df, x_col="log_fc", id_col=None):
     if de_df is None:
         return None
     import numpy as np
+
     return {
         "x": de_df[x_col].tolist(),
         "y": (-np.log10(de_df["p_value"].clip(lower=1e-300))).tolist(),
@@ -51,11 +56,16 @@ def generate_report(
     group_labels=None,
     notes=None,
 ):
-    env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)), autoescape=select_autoescape(['html']))
+    env = Environment(
+        loader=FileSystemLoader(str(TEMPLATE_DIR)),
+        autoescape=select_autoescape(["html"]),
+    )
     template = env.get_template("report_template.html")
 
     pca_json = build_pca_chart_json(pca_result, group_labels)
-    volcano_json = build_volcano_chart_json(de_result_df, x_col=de_x_col, id_col=de_id_col)
+    volcano_json = build_volcano_chart_json(
+        de_result_df, x_col=de_x_col, id_col=de_id_col
+    )
 
     top_de_table = None
     if de_result_df is not None:
@@ -66,8 +76,12 @@ def generate_report(
         data_type=data_type,
         n_samples=n_samples,
         n_features=n_features,
-        pca_json=json.dumps(pca_json, allow_nan=False).replace('<', '\\u003c'),
-        volcano_json=json.dumps(volcano_json, allow_nan=False).replace('<', '\\u003c') if volcano_json else "null",
+        pca_json=json.dumps(pca_json, allow_nan=False).replace("<", "\\u003c"),
+        volcano_json=(
+            json.dumps(volcano_json, allow_nan=False).replace("<", "\\u003c")
+            if volcano_json
+            else "null"
+        ),
         clustering=clustering_result,
         top_de_table=top_de_table,
         de_x_col=de_x_col,

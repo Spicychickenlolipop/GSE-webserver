@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node src/index.js",
     "worker": "node src/queue/worker.js",
-    "dev": "node --watch src/index.js"
+    "dev": "node --watch src/index.js",
+    "test": "node --test src/routes/analyze.test.js src/queue/worker.test.js tests/frontend.test.js",
+    "test:python": "python -m unittest discover -s python -p test_*.py -v"
   },
   "dependencies": {
     "bullmq": "^5.12.0",

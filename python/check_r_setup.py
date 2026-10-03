@@ -7,6 +7,7 @@ Usage:
 Doesn't touch the job queue or GEO — just verifies the R bridge works, so you
 can debug R/rpy2 installation issues independently of the rest of the app.
 """
+
 import sys
 
 import r_bridge

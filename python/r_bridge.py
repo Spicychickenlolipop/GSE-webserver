@@ -8,11 +8,13 @@ and fall back to the pure-Python implementation rather than crashing the
 whole pipeline. This keeps the webserver usable for people who haven't set
 up R, while giving correct, field-standard results for people who have.
 """
+
 import pandas as pd
 
 
 class RBridgeUnavailable(Exception):
     """Raised when R/rpy2/a required R package isn't available."""
+
     pass
 
 
@@ -85,6 +87,7 @@ def limma_differential_expression(
     """
     ro, pandas2ri, localconverter, limma = _get_limma()
     from rpy2.robjects.packages import importr
+
     stats_pkg = importr("stats")  # for model.matrix
 
     groups = list(group_labels.dropna().unique())

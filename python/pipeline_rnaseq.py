@@ -9,11 +9,14 @@ Field-standard normalization + DE is DESeq2 or edgeR (R/Bioconductor). This modu
 gives a Python-only fallback (CPM + log transform, filtering) plus a hook for the
 real DESeq2 call via rpy2.
 """
+
 import numpy as np
 import pandas as pd
 
 
-def filter_low_counts(counts: pd.DataFrame, min_count: int = 10, min_samples_frac: float = 0.2) -> pd.DataFrame:
+def filter_low_counts(
+    counts: pd.DataFrame, min_count: int = 10, min_samples_frac: float = 0.2
+) -> pd.DataFrame:
     """counts: genes x samples raw counts."""
     min_samples = max(1, int(counts.shape[1] * min_samples_frac))
     keep = (counts >= min_count).sum(axis=1) >= min_samples
@@ -33,24 +36,22 @@ def preprocess(counts_matrix: pd.DataFrame) -> pd.DataFrame:
     Returns: samples x genes, normalized, ready for ML.
     """
     if counts_matrix.isna().any().any():
-        raise ValueError('Raw RNA-seq counts contain missing values. Supply complete counts; missing counts are not assumed to be zero.')
+        raise ValueError(
+            "Raw RNA-seq counts contain missing values. Supply complete counts; missing counts are not assumed to be zero."
+        )
     if (counts_matrix < 0).any().any():
-        raise ValueError('Raw RNA-seq counts must be non-negative. For normalized or log expression, select already processed input.')
+        raise ValueError(
+            "Raw RNA-seq counts must be non-negative. For normalized or log expression, select already processed input."
+        )
     filtered = filter_low_counts(counts_matrix)
     if filtered.empty:
         # Small/low-depth matrices still support exploratory analysis.
         filtered = counts_matrix.loc[counts_matrix.sum(axis=1) > 0]
     if filtered.empty:
-        raise ValueError('The RNA-seq matrix contains no positive counts.')
+        raise ValueError("The RNA-seq matrix contains no positive counts.")
     normalized = cpm_log_normalize(filtered)
 
-    # TODO (recommended): replace CPM/log with DESeq2's median-of-ratios
-    # normalization + variance-stabilizing transform via rpy2:
-    #   from rpy2.robjects.packages import importr
-    #   deseq2 = importr('DESeq2')
-    #   dds = deseq2.DESeqDataSetFromMatrix(countData=..., colData=..., design=~condition)
-    #   dds = deseq2.DESeq(dds)
-    #   vsd = deseq2.vst(dds)
+    # This is a CPM fallback; DESeq2 normalization is not implemented.
 
     return normalized.T  # samples x genes
 
@@ -63,4 +64,5 @@ def run_differential_expression(matrix: pd.DataFrame, group_labels: pd.Series):
     which a t-test on log-CPM does not.
     """
     from analysis_utils import welch_test
-    return welch_test(matrix, group_labels, 'gene', 'log_fc')
+
+    return welch_test(matrix, group_labels, "gene", "log_fc")

@@ -2,6 +2,7 @@
 Shared ML steps applied after type-specific preprocessing/normalization.
 Works on a samples x features matrix (rows = samples) plus optional labels.
 """
+
 import numpy as np
 import pandas as pd
 from sklearn.decomposition import PCA
@@ -30,8 +31,11 @@ def run_pca(matrix: pd.DataFrame, n_components: int = 2):
     matrix = prepare_processed(matrix)
     scaled = _scale_features(matrix)
     if len(matrix) < 2 or not np.any(np.var(scaled, axis=0) > 0):
-        return {"coords": np.zeros((len(matrix), 2)), "explained_variance_ratio": [0.0, 0.0],
-                "sample_names": matrix.index.tolist()}
+        return {
+            "coords": np.zeros((len(matrix), 2)),
+            "explained_variance_ratio": [0.0, 0.0],
+            "sample_names": matrix.index.tolist(),
+        }
     n_components = min(n_components, matrix.shape[0] - 1, matrix.shape[1])
     pca = PCA(n_components=max(n_components, 1))
     coords = pca.fit_transform(scaled)
@@ -90,13 +94,17 @@ def train_classifier(matrix: pd.DataFrame, labels: pd.Series):
         return {
             "trained": False,
             "reason": f"class '{smallest}' has only {min_class_count} sample(s); "
-                      f"need at least 2 per class for cross-validation",
+            f"need at least 2 per class for cross-validation",
         }
 
     # Fit missing-value imputation within each training fold.
-    clf = make_pipeline(SimpleImputer(keep_empty_features=True),
-                        RandomForestClassifier(n_estimators=500, random_state=42, n_jobs=-1))
-    cv = StratifiedKFold(n_splits=min(5, min_class_count), shuffle=True, random_state=42)
+    clf = make_pipeline(
+        SimpleImputer(keep_empty_features=True),
+        RandomForestClassifier(n_estimators=500, random_state=42, n_jobs=-1),
+    )
+    cv = StratifiedKFold(
+        n_splits=min(5, min_class_count), shuffle=True, random_state=42
+    )
 
     try:
         scores = cross_val_score(clf, X, y, cv=cv, scoring="accuracy")
@@ -104,7 +112,9 @@ def train_classifier(matrix: pd.DataFrame, labels: pd.Series):
         return {"trained": False, "reason": str(e)}
 
     clf.fit(X, y)
-    importances = pd.Series(clf[-1].feature_importances_, index=X.columns).sort_values(ascending=False)
+    importances = pd.Series(clf[-1].feature_importances_, index=X.columns).sort_values(
+        ascending=False
+    )
 
     return {
         "trained": True,
