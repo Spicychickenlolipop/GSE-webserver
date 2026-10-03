@@ -1,0 +1,1772 @@
+[job 3][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\GEOparse\GEOparse.py:401: DtypeWarning: Columns (2) have mixed types. Specify dtype option on import or set low_memory=False.
+  return read_csv(StringIO(data), index_col=None, sep="\t")
+
+[job 3][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 3][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 3][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 3][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 3][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 3][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+
+[job 4][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\GEOparse\GEOparse.py:401: DtypeWarning: Columns (2) have mixed types. Specify dtype option on import or set low_memory=False.
+  return read_csv(StringIO(data), index_col=None, sep="\t")
+
+[job 4][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 4][stderr] During startup - 
+[job 4][stderr] Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 4][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 4][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 4][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 4][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+
+[job 6][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\GEOparse\GEOparse.py:401: DtypeWarning: Columns (2) have mixed types. Specify dtype option on import or set low_memory=False.
+  return read_csv(StringIO(data), index_col=None, sep="\t")
+
+[job 6][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 6][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 6][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 6][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 6][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 6][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+
+[job 7][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 7][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 7][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 7][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 7][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+[job 7][stderr] 
+
+[job 7][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+
+[job 7][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\scipy\stats\_axis_nan_policy.py:611: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  res = hypotest_fun_out(*samples, axis=axis, **kwds)
+
+[job 8][stderr] Traceback (most recent call last):
+
+[job 8][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[job 8][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 8][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+
+[job 8][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000024E89B3A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 8][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+
+[job 8][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024E89B3A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 8][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 82, in fetch_gse
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[job 8][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024E89B3A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 65, in main
+    gse = fetch_geo.fetch_gse(args.gse)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 97, in fetch_gse
+    raise RuntimeError(f'Could not download {accession} from NCBI over HTTPS. Check the network connection and retry. ({exc})') from exc
+RuntimeError: Could not download GSE2431 from NCBI over HTTPS. Check the network connection and retry. (HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024E89B3A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)")))
+
+Job 8 failed: Could not download GSE2431 from NCBI over HTTPS. Check the network connection and retry. (HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024E89B3A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)")))
+[job 9][stderr] Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+[job 9][stderr] 
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x00000232E5A5A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+
+[job 9][stderr] Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000232E5A5A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 82, in fetch_gse
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000232E5A5A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+[job 9][stderr] 
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 65, in main
+    gse = fetch_geo.fetch_gse(args.gse)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 97, in fetch_gse
+    raise RuntimeError(f'Could not download {accession} from NCBI over HTTPS. Check the network connection and retry. ({exc})') from exc
+RuntimeError: Could not download GSE2431 from NCBI over HTTPS. Check the network connection and retry. (HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000232E5A5A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)")))
+
+Job 9 failed: Could not download GSE2431 from NCBI over HTTPS. Check the network connection and retry. (HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000232E5A5A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)")))
+[job 9][stderr] Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x00000294987EE490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11002] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000294987EE490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11002] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 124, in fetch_gse
+    _download_soft(session, url, cache, accession)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000294987EE490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11002] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x00000294987EF390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE2431&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000294987EF390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 129, in fetch_gse
+    _download_soft(session, fallback, cache, accession, compressed=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE2431&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000294987EF390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 9][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 65, in main
+    gse = fetch_geo.fetch_gse(args.gse)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 138, in fetch_gse
+    raise RuntimeError(message) from exc
+RuntimeError: Cannot resolve NCBI download servers to download GSE2431. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+
+Job 9 failed: Cannot resolve NCBI download servers to download GSE2431. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+[job 10][stderr] Traceback (most recent call last):
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[job 10][stderr] socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002CC1D71E490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC1D71E490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 124, in fetch_gse
+    _download_soft(session, url, cache, accession)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC1D71E490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002CC1D71F390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE2431&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC1D71F390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 129, in fetch_gse
+    _download_soft(session, fallback, cache, accession, compressed=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE2431&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002CC1D71F390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 65, in main
+    gse = fetch_geo.fetch_gse(args.gse)
+
+[job 10][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 138, in fetch_gse
+    raise RuntimeError(message) from exc
+RuntimeError: Cannot resolve NCBI download servers to download GSE2431. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+
+Job 10 failed: Cannot resolve NCBI download servers to download GSE2431. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+[job 11][stderr] Traceback (most recent call last):
+
+[job 11][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 11][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020FD1F1E490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 11][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE14nnn/GSE14520/soft/GSE14520_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020FD1F1E490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 11][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 124, in fetch_gse
+    _download_soft(session, url, cache, accession)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE14nnn/GSE14520/soft/GSE14520_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020FD1F1E490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 11][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 11][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000020FD1F1F390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 11][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE14520&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020FD1F1F390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 11][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 129, in fetch_gse
+    _download_soft(session, fallback, cache, accession, compressed=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE14520&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020FD1F1F390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 11][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 65, in main
+    gse = fetch_geo.fetch_gse(args.gse)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 138, in fetch_gse
+    raise RuntimeError(message) from exc
+RuntimeError: Cannot resolve NCBI download servers to download GSE14520. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+
+Job 11 failed: Cannot resolve NCBI download servers to download GSE14520. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+[job 12][stderr] Traceback (most recent call last):
+
+[job 12][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 82, in main
+    matrix = load_matrix_for_gse(gse, data_type)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 159, in load_matrix_for_gse
+    return load_geo_matrix(gse, data_type)
+
+[job 12][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\matrix_io.py", line 90, in load_geo_matrix
+    raise ValueError('This series contains multiple platforms. Upload a processed matrix for one platform at a time.')
+ValueError: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+
+Job 12 failed: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+[job 14][stderr] Traceback (most recent call last):
+
+[job 14][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 82, in main
+    matrix = load_matrix_for_gse(gse, data_type)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 159, in load_matrix_for_gse
+    return load_geo_matrix(gse, data_type)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\matrix_io.py", line 90, in load_geo_matrix
+    raise ValueError('This series contains multiple platforms. Upload a processed matrix for one platform at a time.')
+ValueError: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+
+Job 14 failed: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+[job 15][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\GEOparse\GEOparse.py:401: DtypeWarning: Columns (2) have mixed types. Specify dtype option on import or set low_memory=False.
+  return read_csv(StringIO(data), index_col=None, sep="\t")
+
+[job 15][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 15][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 15][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 15][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 15][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 13][stderr] Traceback (most recent call last):
+
+[job 13][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 82, in main
+    matrix = load_matrix_for_gse(gse, data_type)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 159, in load_matrix_for_gse
+    return load_geo_matrix(gse, data_type)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\matrix_io.py", line 90, in load_geo_matrix
+    raise ValueError('This series contains multiple platforms. Upload a processed matrix for one platform at a time.')
+
+[job 13][stderr] ValueError: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+
+Job 13 failed: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+[job 15][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+
+[job 16][stderr] Traceback (most recent call last):
+
+[job 16][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 82, in main
+    matrix = load_matrix_for_gse(gse, data_type)
+
+[job 16][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 159, in load_matrix_for_gse
+    return load_geo_matrix(gse, data_type)
+
+[job 16][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\matrix_io.py", line 90, in load_geo_matrix
+    raise ValueError('This series contains multiple platforms. Upload a processed matrix for one platform at a time.')
+ValueError: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+
+Job 16 failed: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+[job 17][stderr] Traceback (most recent call last):
+
+[job 17][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 82, in main
+    matrix = load_matrix_for_gse(gse, data_type)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 159, in load_matrix_for_gse
+    return load_geo_matrix(gse, data_type)
+
+[job 17][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\matrix_io.py", line 90, in load_geo_matrix
+    raise ValueError('This series contains multiple platforms. Upload a processed matrix for one platform at a time.')
+ValueError: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+
+Job 17 failed: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+[job 18][stderr] Traceback (most recent call last):
+
+[job 18][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 18][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001B4D8A9E490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+[job 18][stderr] 
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 18][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE5nnn/GSE5847/soft/GSE5847_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4D8A9E490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 18][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 124, in fetch_gse
+    _download_soft(session, url, cache, accession)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE5nnn/GSE5847/soft/GSE5847_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4D8A9E490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 18][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 18][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001B4D8A9F390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 18][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE5847&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4D8A9F390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 18][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 129, in fetch_gse
+    _download_soft(session, fallback, cache, accession, compressed=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE5847&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4D8A9F390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 18][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 65, in main
+    gse = fetch_geo.fetch_gse(args.gse)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 138, in fetch_gse
+    raise RuntimeError(message) from exc
+RuntimeError: Cannot resolve NCBI download servers to download GSE5847. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+
+Job 18 failed: Cannot resolve NCBI download servers to download GSE5847. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+[job 19][stderr] Traceback (most recent call last):
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+[job 19][stderr] 
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+
+[job 19][stderr] urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000017F535FE490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE5nnn/GSE5847/soft/GSE5847_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000017F535FE490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 124, in fetch_gse
+    _download_soft(session, url, cache, accession)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE5nnn/GSE5847/soft/GSE5847_family.soft.gz (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000017F535FE490>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000017F535FF390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE5847&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000017F535FF390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+[job 19][stderr] 
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 129, in fetch_gse
+    _download_soft(session, fallback, cache, accession, compressed=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 75, in _download_soft
+    with session.get(url, stream=True, timeout=(15, 120)) as response:
+         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/query/acc.cgi?acc=GSE5847&targ=all&form=text&view=full (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000017F535FF390>: Failed to resolve 'www.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+
+[job 19][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 65, in main
+    gse = fetch_geo.fetch_gse(args.gse)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\fetch_geo.py", line 138, in fetch_gse
+    raise RuntimeError(message) from exc
+RuntimeError: Cannot resolve NCBI download servers to download GSE5847. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+
+Job 19 failed: Cannot resolve NCBI download servers to download GSE5847. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix.
+[job 20][stderr] Traceback (most recent call last):
+
+[job 20][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 82, in main
+    matrix = load_matrix_for_gse(gse, data_type)
+
+[job 20][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 159, in load_matrix_for_gse
+    return load_geo_matrix(gse, data_type)
+
+[job 20][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\matrix_io.py", line 90, in load_geo_matrix
+    raise ValueError('This series contains multiple platforms. Upload a processed matrix for one platform at a time.')
+
+[job 20][stderr] ValueError: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+
+Job 20 failed: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+[job 21][stderr] Traceback (most recent call last):
+
+[job 21][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 82, in main
+    matrix = load_matrix_for_gse(gse, data_type)
+
+[job 21][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 159, in load_matrix_for_gse
+    return load_geo_matrix(gse, data_type)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\matrix_io.py", line 90, in load_geo_matrix
+    raise ValueError('This series contains multiple platforms. Upload a processed matrix for one platform at a time.')
+ValueError: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+
+Job 21 failed: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+[job 22][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\GEOparse\GEOparse.py:401: DtypeWarning: Columns (2) have mixed types. Specify dtype option on import or set low_memory=False.
+  return read_csv(StringIO(data), index_col=None, sep="\t")
+
+[job 22][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 22][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 22][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 22][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 22][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 22][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+
+[job 23][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\GEOparse\GEOparse.py:401: DtypeWarning: Columns (2) have mixed types. Specify dtype option on import or set low_memory=False.
+  return read_csv(StringIO(data), index_col=None, sep="\t")
+
+[job 23][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 23][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 23][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 23][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 23][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 23][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=1.
+  warnings.warn(
+
+[job 24][stderr] Traceback (most recent call last):
+
+[job 24][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 82, in main
+    matrix = load_matrix_for_gse(gse, data_type)
+
+[job 24][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 159, in load_matrix_for_gse
+    return load_geo_matrix(gse, data_type)
+
+[job 24][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\matrix_io.py", line 90, in load_geo_matrix
+    raise ValueError('This series contains multiple platforms. Upload a processed matrix for one platform at a time.')
+
+[job 24][stderr] ValueError: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+
+Job 24 failed: This series contains multiple platforms. Upload a processed matrix for one platform at a time.
+[job 25][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 25][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 25][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 25][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 25][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 26][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 26][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 26][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 26][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 26][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 26][stderr] C:\Users\Anirudra Kisku\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1419: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+
+[job 27][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 27][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 27][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 27][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 27][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 27][stderr] Traceback (most recent call last):
+
+[job 27][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 101, in main
+    group_labels = load_labels_from_file(args.labels_file, processed.index)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 182, in load_labels_from_file
+    raise ValueError("No non-empty labels match matrix sample IDs.")
+ValueError: No non-empty labels match matrix sample IDs.
+
+Job 27 failed: No non-empty labels match matrix sample IDs.
+[job 28][stderr] 'sh' is not recognized as an internal or external command,
+operable program or batch file.
+
+[job 28][stderr] During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+
+[job 28][stderr] R callback write-console: Error: package or namespace load failed for 'limma' in inDL(x, as.logical(local), as.logical(now), ...):
+ unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+
+  
+
+[job 28][stderr] R callback write-console: Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+  
+
+[job 28][stderr] [microarray] R/limma not available (R and/or the Bioconductor 'limma' package aren't available (Error in inDL(x, as.logical(local), as.logical(now), ...) : 
+  unable to load shared object 'C:/Program Files/R/R-4.6.1/library/stats/libs/x64/stats.dll':
+  LoadLibrary failure:  The specified module could not be found.
+). In R: BiocManager::install('limma')); using Python fallback.
+
+[job 28][stderr] Traceback (most recent call last):
+
+[job 28][stderr]   File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 101, in main
+    group_labels = load_labels_from_file(args.labels_file, processed.index)
+  File "C:\Users\Anirudra Kisku\Downloads\gse-webserver (5)\gse-webserver\python\run_pipeline.py", line 173, in load_labels_from_file
+    raise ValueError("Labels file must have exactly two columns: sample_id, group.")
+ValueError: Labels file must have exactly two columns: sample_id, group.
+
+Job 28 failed: Labels file must have exactly two columns: sample_id, group.

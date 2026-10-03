@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Report — 57644a3e-83e7-487f-9137-ca522acef091.csv</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.32.0/plotly.min.js"></script>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 960px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
+  h1 { font-size: 1.6em; margin-bottom: 0; }
+  .subtitle { color: #666; margin-top: 4px; }
+  .card { border: 1px solid #e2e2e2; border-radius: 10px; padding: 20px; margin: 24px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9em; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #eee; }
+  th { background: #fafafa; }
+  .stat { display: inline-block; margin-right: 32px; }
+  .stat .val { font-size: 1.4em; font-weight: 600; }
+  .stat .label { color: #666; font-size: 0.85em; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; background: #eef2ff; color: #3730a3; font-size: 0.8em; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>57644a3e-83e7-487f-9137-ca522acef091.csv — Analysis Report</h1>
+<p class="subtitle"><span class="badge">microarray</span></p>
+
+<div class="card"><h2>Analysis notes</h2><ul><li>Type-specific preprocessing was applied.</li><li>No unambiguous group labels were available; supervised analysis was skipped.</li><li>Differential analysis requires exactly two groups with at least two measured samples per group and testable features.</li></ul></div>
+
+
+<div class="card">
+  <div class="stat"><div class="val">60</div><div class="label">Samples</div></div>
+  <div class="stat"><div class="val">20246</div><div class="label">Features (genes/probes)</div></div>
+  <div class="stat"><div class="val">6</div><div class="label">Clusters found</div></div>
+</div>
+
+<div class="card">
+  <h2>Sample overview (PCA)</h2>
+  <div id="pca-chart" style="width:100%;height:420px;"></div>
+</div>
+
+
+
+
+
+<script>
+  const pca = {"x": [58.83083044912556, 42.31186323524053, 171.38377781699273, -13.562352355527086, -26.40728523131361, -37.033392916333455, -37.47919429871165, -28.364146976393467, -33.003895130541714, -32.989267312637175, -39.311663328227404, -45.95781522306265, -46.406765675488025, -39.74317914025078, -32.89746634220176, -39.9069531194912, -41.261267523636924, -38.4758725363323, -37.58051251460365, -44.27599019056024, -43.39710084813301, -46.83035007845605, -37.543824130328204, -24.601473194130783, -35.48288743435846, -37.554170192294976, -27.186282715463175, -25.794567775175913, -8.140126364510014, -19.207679768698448, 187.0865357768781, 0.7977198019913347, -18.93646182505352, -12.650376732488056, -31.687118591692048, 234.29397350195325, -25.685833165247956, -36.09690319320906, 202.32001120430215, -36.457808766334956, 191.4606363859833, -38.71586566714578, -36.20225526083382, 156.91507871706935, 168.12651663478894, -34.40261026458443, -32.24331737046122, -35.748141520534176, 122.49095629449643, -34.992589279696396, -39.20704937728533, -36.79700387991346, -38.64104015221374, -37.02430352439189, -6.006301327085254, -40.05646722223792, 5.883766755002702, -5.60363701067749, -22.38066843852563, -21.97043168735003], "y": [-76.17279493609512, -64.25290999530435, -157.28655197811946, -25.674940024921295, -15.925057794688975, -19.294261592400524, -6.714003781827289, -22.10910591670173, -24.692074448563343, -6.661428352576675, -9.510810131505387, -15.979246584856512, -11.525355401075437, -8.805412198541152, -4.104525664255585, 2.4210404174799134, 2.692085091620761, -9.90461947600208, -14.964827612752464, -11.409205947823086, -14.877368346443209, -9.919036611657505, 0.7522977666793296, -3.790350719334049, -13.43387526348224, -31.723035759513195, -9.255544660943126, -2.513382134950464, -4.89191595114919, -12.964116471436864, 35.386576171802304, 35.82431566647422, 26.109151137370944, 24.81213648044324, 8.739158544545212, -158.994053225074, 6.1746464255060705, 7.685670285844336, 89.66256903463304, 23.468965783888013, 82.75834743548003, 6.7185352800738185, 5.172129732893285, 27.272746944095683, 86.27556047861572, 21.989720141685684, 10.996028724159407, 15.573344936505128, 70.50496688681582, -0.13222526190455353, -4.733740014537616, 22.665668054935736, 15.813135194618171, -0.038799443200137916, 46.87865952729048, 16.69401222759906, 50.469736202829345, 10.832650268256176, 21.778055641590473, -3.867334782094777], "text": ["CA.102548", "CA.104338", "CA.105094", "CA.109745", "CA.1906415", "CA.1912627", "CA.1924346", "CA.1926760", "CA.1927842", "CA.1933414", "CA.1940640", "CA.2004407", "CA.2005288", "CA.2006047", "CA.2008260", "CA.2009329", "CA.2009381", "CA.2009850", "CA.2017611", "CA.2039179", "CA.2040686", "CA.2045012", "CA.2046297", "CA.348981", "CA.354300", "CA.359448", "CA.94377", "CA.98389", "CA.98475", "CA.99145", "CAP.102548", "CAP.104338", "CAP.105094", "CAP.109745", "CAP.1906415", "CAP.1912627", "CAP.1924346", "CAP.1926760", "CAP.1927842", "CAP.1933414", "CAP.1940640", "CAP.2004407", "CAP.2005288", "CAP.2006047", "CAP.2008260", "CAP.2009329", "CAP.2009381", "CAP.2009850", "CAP.2017611", "CAP.2039179", "CAP.2040686", "CAP.2046297", "CAP.2046641", "CAP.348981", "CAP.354300", "CAP.359448", "CAP.94377", "CAP.98389", "CAP.98475", "CAP.99145"], "labels": ["sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample"], "explained_variance": [0.26726154624377907, 0.08660536651791136]};
+  const uniqueLabels = [...new Set(pca.labels)];
+  const traces = uniqueLabels.map(lbl => {
+    const idx = pca.labels.map((l,i) => l === lbl ? i : -1).filter(i => i >= 0);
+    return {
+      x: idx.map(i => pca.x[i]),
+      y: idx.map(i => pca.y[i]),
+      text: idx.map(i => pca.text[i]),
+      mode: 'markers',
+      type: 'scatter',
+      name: lbl,
+      marker: { size: 10 }
+    };
+  });
+  Plotly.newPlot('pca-chart', traces, {
+    xaxis: { title: `PC1 (${(pca.explained_variance[0]*100).toFixed(1)}%)` },
+    yaxis: { title: `PC2 (${pca.explained_variance[1] ? (pca.explained_variance[1]*100).toFixed(1) : 0}%)` },
+    margin: { t: 20 }
+  });
+
+  const volcano = null;
+  if (volcano) {
+    Plotly.newPlot('volcano-chart', [{
+      x: volcano.x, y: volcano.y, text: volcano.text,
+      mode: 'markers', type: 'scatter',
+      marker: { size: 6, color: '#4338ca' }
+    }], {
+      xaxis: { title: 'None' },
+      yaxis: { title: '-log10(p-value)' },
+      margin: { t: 20 }
+    });
+  }
+</script>
+
+</body>
+</html>

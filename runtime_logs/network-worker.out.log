@@ -1,0 +1,178 @@
+GSE analysis worker connected to Redis, ready for jobs.
+[job 3] PROGRESS:fetching
+[job 3] PROGRESS:detected:microarray
+[job 3] PROGRESS:preprocessing:microarray
+[job 3] PROGRESS:ml_pca:microarray
+[job 3] PROGRESS:ml_clustering:microarray
+[job 3] PROGRESS:rendering_report:microarray
+[job 3] PROGRESS:done:microarray
+[job 3] During startup - Warning messages:
+[job 3] 1: package 'stats' in options("defaultPackages") was not found 
+[job 3] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 3] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 3] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 3] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 4] PROGRESS:fetching
+[job 4] PROGRESS:detected:microarray
+[job 4] PROGRESS:preprocessing:microarray
+[job 4] PROGRESS:ml_pca:microarray
+[job 4] PROGRESS:ml_clustering:microarray
+[job 4] PROGRESS:rendering_report:microarray
+[job 4] PROGRESS:done:microarray
+[job 4] During startup - Warning messages:
+[job 4] 1: package 'stats' in options("defaultPackages") was not found 
+[job 4] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 4] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 4] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 4] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 6] PROGRESS:fetching
+[job 6] PROGRESS:detected:microarray
+[job 6] PROGRESS:preprocessing:microarray
+[job 6] PROGRESS:ml_pca:microarray
+[job 6] PROGRESS:ml_clustering:microarray
+[job 6] PROGRESS:rendering_report:microarray
+[job 6] PROGRESS:done:microarray
+[job 6] During startup - Warning messages:
+[job 6] 1: package 'stats' in options("defaultPackages") was not found 
+[job 6] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 6] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 6] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 6] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 7] PROGRESS:loading_upload:microarray
+[job 7] PROGRESS:ml_pca:microarray
+[job 7] PROGRESS:ml_clustering:microarray
+[job 7] PROGRESS:ml_classification:microarray
+[job 7] PROGRESS:differential_analysis:microarray
+[job 7] PROGRESS:rendering_report:microarray
+[job 7] PROGRESS:done:microarray
+[job 7] During startup - Warning messages:
+[job 7] 1: package 'stats' in options("defaultPackages") was not found 
+[job 7] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 7] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 7] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 7] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 8] PROGRESS:fetching
+[job 8] ERROR:{"message": "Could not download GSE2431 from NCBI over HTTPS. Check the network connection and retry. (HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000024E89B3A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)\")))"}
+[job 9] PROGRESS:fetching
+[job 9] ERROR:{"message": "Could not download GSE2431 from NCBI over HTTPS. Check the network connection and retry. (HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE2nnn/GSE2431/soft/GSE2431_family.soft.gz (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x00000232E5A5A710>: Failed to resolve 'ftp.ncbi.nlm.nih.gov' ([Errno 11001] getaddrinfo failed)\")))"}
+[job 9] PROGRESS:fetching
+[job 9] ERROR:{"message": "Cannot resolve NCBI download servers to download GSE2431. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix."}
+[job 10] PROGRESS:fetching
+[job 10] ERROR:{"message": "Cannot resolve NCBI download servers to download GSE2431. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix."}
+[job 11] PROGRESS:fetching
+[job 11] ERROR:{"message": "Cannot resolve NCBI download servers to download GSE14520. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix."}
+[job 12] PROGRESS:fetching
+[job 13] PROGRESS:fetching
+[job 12] PROGRESS:detected:microarray
+[job 12] PROGRESS:preprocessing:microarray
+[job 12] ERROR:{"message": "This series contains multiple platforms. Upload a processed matrix for one platform at a time."}
+[job 14] PROGRESS:fetching
+[job 14] PROGRESS:detected:microarray
+[job 14] PROGRESS:preprocessing:microarray
+[job 14] ERROR:{"message": "This series contains multiple platforms. Upload a processed matrix for one platform at a time."}
+[job 15] PROGRESS:fetching
+[job 15] PROGRESS:detected:microarray
+[job 15] PROGRESS:preprocessing:microarray
+[job 13] PROGRESS:detected:microarray
+[job 13] PROGRESS:preprocessing:microarray
+[job 13] ERROR:{"message": "This series contains multiple platforms. Upload a processed matrix for one platform at a time."}
+[job 15] PROGRESS:ml_pca:microarray
+[job 15] PROGRESS:ml_clustering:microarray
+[job 15] PROGRESS:rendering_report:microarray
+[job 15] PROGRESS:done:microarray
+[job 15] During startup - Warning messages:
+[job 15] 1: package 'stats' in options("defaultPackages") was not found 
+[job 15] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 15] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 15] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 15] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 16] PROGRESS:fetching
+[job 16] PROGRESS:detected:microarray
+[job 16] PROGRESS:preprocessing:microarray
+[job 16] ERROR:{"message": "This series contains multiple platforms. Upload a processed matrix for one platform at a time."}
+[job 17] PROGRESS:fetching
+[job 17] PROGRESS:detected:microarray
+[job 17] PROGRESS:preprocessing:microarray
+[job 17] ERROR:{"message": "This series contains multiple platforms. Upload a processed matrix for one platform at a time."}
+[job 18] PROGRESS:fetching
+[job 18] ERROR:{"message": "Cannot resolve NCBI download servers to download GSE5847. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix."}
+[job 19] PROGRESS:fetching
+[job 19] ERROR:{"message": "Cannot resolve NCBI download servers to download GSE5847. Check this computer's internet connection and DNS, then retry. You can still analyze cached datasets or upload a processed matrix."}
+[job 20] PROGRESS:fetching
+[job 20] PROGRESS:detected:microarray
+[job 20] PROGRESS:preprocessing:microarray
+[job 20] ERROR:{"message": "This series contains multiple platforms. Upload a processed matrix for one platform at a time."}
+[job 21] PROGRESS:fetching
+[job 21] PROGRESS:detected:microarray
+[job 21] PROGRESS:preprocessing:microarray
+[job 21] ERROR:{"message": "This series contains multiple platforms. Upload a processed matrix for one platform at a time."}
+[job 22] PROGRESS:fetching
+[job 22] PROGRESS:detected:microarray
+[job 22] PROGRESS:preprocessing:microarray
+[job 22] PROGRESS:ml_pca:microarray
+[job 22] PROGRESS:ml_clustering:microarray
+[job 22] PROGRESS:rendering_report:microarray
+[job 22] PROGRESS:done:microarray
+[job 22] During startup - Warning messages:
+[job 22] 1: package 'stats' in options("defaultPackages") was not found 
+[job 22] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 22] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 22] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 22] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 23] PROGRESS:fetching
+[job 23] PROGRESS:detected:microarray
+[job 23] PROGRESS:preprocessing:microarray
+[job 23] PROGRESS:ml_pca:microarray
+[job 23] PROGRESS:ml_clustering:microarray
+[job 23] PROGRESS:rendering_report:microarray
+[job 23] PROGRESS:done:microarray
+[job 23] During startup - Warning messages:
+[job 23] 1: package 'stats' in options("defaultPackages") was not found 
+[job 23] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 23] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 23] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 23] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 24] PROGRESS:fetching
+[job 24] PROGRESS:detected:microarray
+[job 24] PROGRESS:preprocessing:microarray
+[job 24] ERROR:{"message": "This series contains multiple platforms. Upload a processed matrix for one platform at a time."}
+[job 25] PROGRESS:loading_upload:microarray
+[job 25] PROGRESS:ml_pca:microarray
+[job 25] PROGRESS:ml_clustering:microarray
+[job 25] PROGRESS:rendering_report:microarray
+[job 25] PROGRESS:done:microarray
+[job 25] During startup - Warning messages:
+[job 25] 1: package 'stats' in options("defaultPackages") was not found 
+[job 25] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 25] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 25] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 25] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 26] PROGRESS:loading_upload:microarray
+[job 26] PROGRESS:ml_pca:microarray
+[job 26] PROGRESS:ml_clustering:microarray
+[job 26] PROGRESS:rendering_report:microarray
+[job 26] PROGRESS:done:microarray
+[job 26] During startup - Warning messages:
+[job 26] 1: package 'stats' in options("defaultPackages") was not found 
+[job 26] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 26] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 26] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 26] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 27] PROGRESS:loading_upload:microarray
+[job 27] ERROR:{"message": "No non-empty labels match matrix sample IDs."}
+[job 27] During startup - Warning messages:
+[job 27] 1: package 'stats' in options("defaultPackages") was not found 
+[job 27] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 27] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 27] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 27] 5: Setting LC_TIME=C.UTF-8 failed 
+[job 28] PROGRESS:loading_upload:microarray
+[job 28] ERROR:{"message": "Labels file must have exactly two columns: sample_id, group."}
+[job 28] During startup - Warning messages:
+[job 28] 1: package 'stats' in options("defaultPackages") was not found 
+[job 28] 2: Setting LC_COLLATE=C.UTF-8 failed 
+[job 28] 3: Setting LC_CTYPE=C.UTF-8 failed 
+[job 28] 4: Setting LC_MONETARY=C.UTF-8 failed 
+[job 28] 5: Setting LC_TIME=C.UTF-8 failed 
+GSE analysis worker connected to Redis, ready for jobs.
+GSE analysis worker connected to Redis, ready for jobs.

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Report — GSE12345</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.32.0/plotly.min.js"></script>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 960px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
+  h1 { font-size: 1.6em; margin-bottom: 0; }
+  .subtitle { color: #666; margin-top: 4px; }
+  .card { border: 1px solid #e2e2e2; border-radius: 10px; padding: 20px; margin: 24px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9em; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #eee; }
+  th { background: #fafafa; }
+  .stat { display: inline-block; margin-right: 32px; }
+  .stat .val { font-size: 1.4em; font-weight: 600; }
+  .stat .label { color: #666; font-size: 0.85em; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; background: #eef2ff; color: #3730a3; font-size: 0.8em; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>GSE12345 — Analysis Report</h1>
+<p class="subtitle"><span class="badge">microarray</span></p>
+
+<div class="card"><h2>Analysis notes</h2><ul><li>Normalization skipped: input was marked already processed.</li><li>No unambiguous group labels were available; supervised analysis was skipped.</li><li>Differential analysis requires exactly two groups with at least two measured samples per group and testable features.</li></ul></div>
+
+
+<div class="card">
+  <div class="stat"><div class="val">13</div><div class="label">Samples</div></div>
+  <div class="stat"><div class="val">54675</div><div class="label">Features (genes/probes)</div></div>
+  <div class="stat"><div class="val">2</div><div class="label">Clusters found</div></div>
+</div>
+
+<div class="card">
+  <h2>Sample overview (PCA)</h2>
+  <div id="pca-chart" style="width:100%;height:420px;"></div>
+</div>
+
+
+
+
+
+<script>
+  const pca = {"x": [-166.66369247200637, -93.33962175034534, -2.407139496353077, -23.458133036177625, 212.2657259577726, 42.382416902292675, 8.972415293423243, -60.201127210872144, 38.05745736776231, 14.02104514858697, -1.2014242391159144, -36.53665227668639, 68.10872981171931], "y": [-87.76089453256675, -30.18380654340589, -73.63351743228631, -80.87011111271293, -3.0275028304010263, -63.76303488915522, 77.52619705882643, 233.0580781680606, -23.132872304583127, 5.810039959551909, 44.71396066394816, 19.798259370952213, -18.534795576227904], "text": ["GSM309986", "GSM309987", "GSM309988", "GSM309989", "GSM309990", "GSM309991", "GSM310012", "GSM310013", "GSM310014", "GSM310015", "GSM310016", "GSM310068", "GSM310070"], "labels": ["sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample", "sample"], "explained_variance": [0.15423320941539875, 0.14298749961729254]};
+  const uniqueLabels = [...new Set(pca.labels)];
+  const traces = uniqueLabels.map(lbl => {
+    const idx = pca.labels.map((l,i) => l === lbl ? i : -1).filter(i => i >= 0);
+    return {
+      x: idx.map(i => pca.x[i]),
+      y: idx.map(i => pca.y[i]),
+      text: idx.map(i => pca.text[i]),
+      mode: 'markers',
+      type: 'scatter',
+      name: lbl,
+      marker: { size: 10 }
+    };
+  });
+  Plotly.newPlot('pca-chart', traces, {
+    xaxis: { title: `PC1 (${(pca.explained_variance[0]*100).toFixed(1)}%)` },
+    yaxis: { title: `PC2 (${pca.explained_variance[1] ? (pca.explained_variance[1]*100).toFixed(1) : 0}%)` },
+    margin: { t: 20 }
+  });
+
+  const volcano = null;
+  if (volcano) {
+    Plotly.newPlot('volcano-chart', [{
+      x: volcano.x, y: volcano.y, text: volcano.text,
+      mode: 'markers', type: 'scatter',
+      marker: { size: 6, color: '#4338ca' }
+    }], {
+      xaxis: { title: 'None' },
+      yaxis: { title: '-log10(p-value)' },
+      margin: { t: 20 }
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Report — {{ gse_id }}</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.32.0/plotly.min.js"></script>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 960px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
+  h1 { font-size: 1.6em; margin-bottom: 0; }
+  .subtitle { color: #666; margin-top: 4px; }
+  .card { border: 1px solid #e2e2e2; border-radius: 10px; padding: 20px; margin: 24px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9em; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #eee; }
+  th { background: #fafafa; }
+  .stat { display: inline-block; margin-right: 32px; }
+  .stat .val { font-size: 1.4em; font-weight: 600; }
+  .stat .label { color: #666; font-size: 0.85em; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; background: #eef2ff; color: #3730a3; font-size: 0.8em; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>{{ gse_id }} — Analysis Report</h1>
+<p class="subtitle"><span class="badge">{{ data_type }}</span></p>
+{% if notes %}
+<div class="card"><h2>Analysis notes</h2><ul>{% for note in notes %}<li>{{ note }}</li>{% endfor %}</ul></div>
+{% endif %}
+
+<div class="card">
+  <div class="stat"><div class="val">{{ n_samples }}</div><div class="label">Samples</div></div>
+  <div class="stat"><div class="val">{{ n_features }}</div><div class="label">Features (genes/probes)</div></div>
+  <div class="stat"><div class="val">{{ clustering.k if clustering else "—" }}</div><div class="label">Clusters found</div></div>
+</div>
+
+<div class="card">
+  <h2>Sample overview (PCA)</h2>
+  <div id="pca-chart" style="width:100%;height:420px;"></div>
+</div>
+
+{% if top_de_table %}
+<div class="card">
+  <h2>Differential {{ "expression" if data_type != "methylation" else "methylation" }} — top hits</h2>
+  <div id="volcano-chart" style="width:100%;height:420px;"></div>
+  <table>
+    <thead>
+      <tr>{% for key in top_de_table[0].keys() %}<th>{{ key }}</th>{% endfor %}</tr>
+    </thead>
+    <tbody>
+      {% for row in top_de_table %}
+      <tr>{% for v in row.values() %}<td>{{ "%.4g"|format(v) if v is number else v }}</td>{% endfor %}</tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+
+{% if classifier and classifier.trained %}
+<div class="card">
+  <h2>ML classifier (Random Forest)</h2>
+  <p>Cross-validated accuracy: <strong>{{ "%.1f"|format(classifier.cv_accuracy_mean * 100) }}%</strong>
+     (± {{ "%.1f"|format(classifier.cv_accuracy_std * 100) }}%), classes: {{ classifier.classes|join(", ") }}</p>
+  <h3>Top predictive features (candidate biomarkers)</h3>
+  <table>
+    <thead><tr><th>Feature</th><th>Importance</th></tr></thead>
+    <tbody>
+      {% for feat, imp in classifier.top_features.items() %}
+      <tr><td>{{ feat }}</td><td>{{ "%.4f"|format(imp) }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% elif classifier %}
+<div class="card">
+  <h2>ML classifier</h2>
+  <p>Not trained: {{ classifier.reason }}</p>
+</div>
+{% endif %}
+
+<script>
+  const pca = {{ pca_json | safe }};
+  const uniqueLabels = [...new Set(pca.labels)];
+  const traces = uniqueLabels.map(lbl => {
+    const idx = pca.labels.map((l,i) => l === lbl ? i : -1).filter(i => i >= 0);
+    return {
+      x: idx.map(i => pca.x[i]),
+      y: idx.map(i => pca.y[i]),
+      text: idx.map(i => pca.text[i]),
+      mode: 'markers',
+      type: 'scatter',
+      name: lbl,
+      marker: { size: 10 }
+    };
+  });
+  Plotly.newPlot('pca-chart', traces, {
+    xaxis: { title: `PC1 (${(pca.explained_variance[0]*100).toFixed(1)}%)` },
+    yaxis: { title: `PC2 (${pca.explained_variance[1] ? (pca.explained_variance[1]*100).toFixed(1) : 0}%)` },
+    margin: { t: 20 }
+  });
+
+  const volcano = {{ volcano_json | safe }};
+  if (volcano) {
+    Plotly.newPlot('volcano-chart', [{
+      x: volcano.x, y: volcano.y, text: volcano.text,
+      mode: 'markers', type: 'scatter',
+      marker: { size: 6, color: '#4338ca' }
+    }], {
+      xaxis: { title: '{{ de_x_col }}' },
+      yaxis: { title: '-log10(p-value)' },
+      margin: { t: 20 }
+    });
+  }
+</script>
+
+</body>
+</html>

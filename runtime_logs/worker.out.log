@@ -1,0 +1,28 @@
+GSE analysis worker started, waiting for jobs...
+[job 2] PROGRESS:loading_upload:microarray
+[job 1] PROGRESS:loading_upload:microarray
+[job 2] PROGRESS:ml_pca:microarray
+[job 2] PROGRESS:ml_clustering:microarray
+[job 2] PROGRESS:ml_classification:microarray
+[job 1] PROGRESS:ml_pca:microarray
+[job 2] PROGRESS:differential_analysis:microarray
+[job 2] PROGRESS:rendering_report:microarray
+[job 2] PROGRESS:done:microarray
+[job 2] During startup - Warning messages:
+1: package 'stats' in options("defaultPackages") was not found 
+2: Setting LC_COLLATE=C.UTF-8 failed 
+3: Setting LC_CTYPE=C.UTF-8 failed 
+4: Setting LC_MONETARY=C.UTF-8 failed 
+5: Setting LC_TIME=C.UTF-8 failed
+[job 1] PROGRESS:ml_clustering:microarray
+[job 1] PROGRESS:rendering_report:microarray
+[job 1] PROGRESS:done:microarray
+[job 1] During startup - Warning messages:
+1: package 'stats' in options("defaultPackages") was not found 
+2: Setting LC_COLLATE=C.UTF-8 failed 
+3: Setting LC_CTYPE=C.UTF-8 failed 
+4: Setting LC_MONETARY=C.UTF-8 failed 
+5: Setting LC_TIME=C.UTF-8 failed
+[job 3] PROGRESS:fetching
+[job 4] PROGRESS:fetching
+[job 5] PROGRESS:fetching

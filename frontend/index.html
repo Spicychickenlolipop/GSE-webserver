@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GSE Analysis Webserver</title>
+<style>
+  :root {
+    --teal-900: #063842;
+    --teal-700: #0b4f5e;
+    --teal-500: #0e6b7d;
+    --ink: #0f2a30;
+    --muted: #5b7278;
+    --panel: #eef6f7;
+    --panel-border: #dbe9ea;
+    --accent: #2563eb;
+    --accent-soft: #e8effe;
+    --good: #1a7f4e;
+    --bad: #b3261e;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Inter, sans-serif;
+    color: var(--ink);
+    background: #ffffff;
+  }
+  header {
+    background: linear-gradient(120deg, var(--teal-900), var(--teal-500));
+    color: white;
+    padding: 22px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand-icon {
+    width: 42px; height: 42px; border-radius: 11px;
+    background: rgba(255,255,255,0.15);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .brand-icon svg { width: 22px; height: 22px; }
+  .brand h1 { font-size: 1.25em; margin: 0; font-weight: 700; }
+  .brand p { font-size: 0.82em; margin: 2px 0 0; opacity: 0.8; font-weight: 400; }
+  .badges { display: flex; gap: 28px; }
+  .badge { text-align: center; font-size: 0.78em; line-height: 1.3; }
+  .badge b { display: block; font-size: 1em; }
+  .badge span { opacity: 0.75; }
+
+  main { max-width: 900px; margin: 0 auto; padding: 36px 24px 80px; }
+
+  .hero {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--radius);
+    padding: 32px 36px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .hero h2 { margin: 0 0 12px; font-size: 1.5em; color: var(--teal-900); }
+  .hero p { margin: 0 auto; color: var(--muted); line-height: 1.55; max-width: 640px; }
+
+  .tabs { display: flex; gap: 10px; margin-bottom: 20px; }
+  .tab-btn {
+    flex: 1;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px solid var(--panel-border);
+    background: white;
+    color: var(--teal-900);
+    font-weight: 600;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .tab-btn.active { background: var(--teal-700); color: white; border-color: var(--teal-700); }
+  .tab-btn:not(.active):hover { background: var(--panel); }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--radius);
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+  .card h3 { margin: 0 0 4px; font-size: 1.05em; color: var(--teal-900); }
+  .card > p.desc { color: var(--muted); font-size: 0.9em; margin: 0 0 20px; }
+
+  .field { margin-bottom: 18px; }
+  .field label { display: block; font-size: 0.85em; font-weight: 600; color: var(--teal-900); margin-bottom: 6px; }
+  select, input[type=text] {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 0.95em;
+    border: 1px solid #c9d7d9;
+    border-radius: 10px;
+    background: white;
+    color: var(--ink);
+  }
+
+  .dropzone {
+    border: 2px dashed #b9cfd2;
+    border-radius: 12px;
+    background: white;
+    padding: 36px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .dropzone:hover, .dropzone.drag-over { border-color: var(--accent); background: var(--accent-soft); }
+  .dropzone.has-file { border-style: solid; border-color: var(--good); background: #f1faf5; }
+  .dropzone-icon {
+    width: 44px; height: 44px; margin: 0 auto 14px;
+    border-radius: 10px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .dropzone-icon svg { width: 22px; height: 22px; color: var(--accent); }
+  .dropzone .primary { font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .dropzone .secondary { color: var(--muted); font-size: 0.88em; margin-bottom: 10px; }
+  .dropzone .hint { color: #8a9c9f; font-size: 0.78em; }
+  .dropzone .filename { font-weight: 600; color: var(--good); word-break: break-all; }
+  input[type=file] { display: none; }
+
+  .analyze-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1em;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background: var(--teal-700);
+    color: white;
+    cursor: pointer;
+    margin-top: 6px;
+  }
+  .analyze-btn:disabled { background: #a9bdc0; cursor: default; }
+  .analyze-btn:not(:disabled):hover { background: var(--teal-900); }
+
+  #status-card { display: none; }
+  #status-card.visible { display: block; }
+  #status-text { font-size: 0.95em; color: var(--ink); }
+  #status-text.error { color: var(--bad); }
+  #status-text.done { color: var(--good); font-weight: 600; }
+  .report-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: var(--good);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+
+  @media (max-width: 640px) {
+    header { padding: 18px 20px; }
+    .badges { display: none; }
+    .hero { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="brand-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+    </div>
+    <div>
+      <h1>GSE Analysis Webserver</h1>
+      <p>Microarray · RNA-seq · DNA Methylation Pipeline</p>
+    </div>
+  </div>
+  <div class="badges">
+    <div class="badge"><b>Automated</b><span>Preprocessing</span></div>
+    <div class="badge"><b>ML</b><span>Powered</span></div>
+    <div class="badge"><b>Interactive</b><span>Reports</span></div>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <h2>GSE Dataset Analysis Tool</h2>
+    <p>Fetch a GEO Series by accession, or upload your own expression, count, or methylation matrix. Get automated preprocessing, PCA and clustering, differential analysis, and ML classification — all in one report.</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" id="tab-gse" onclick="switchTab('gse')">From GEO (GSE ID)</button>
+    <button class="tab-btn" id="tab-upload" onclick="switchTab('upload')">Upload My Own File</button>
+  </div>
+
+  <!-- GEO panel -->
+  <div class="tab-panel active" id="panel-gse">
+    <div class="card">
+      <h3>Fetch from GEO</h3>
+      <p class="desc">Enter a GEO Series accession, e.g. GSE12345. Data type is detected automatically from the platform metadata.</p>
+      <div class="field">
+        <label for="gse-input">GSE Accession</label>
+        <input type="text" id="gse-input" placeholder="GSE12345" />
+      </div>
+      <div class="field">
+        <label for="gse-datatype">Data type</label>
+        <select id="gse-datatype">
+          <option value="">Detect automatically</option>
+          <option value="microarray">Microarray</option>
+          <option value="rnaseq">RNA-seq</option>
+          <option value="methylation">DNA methylation</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="gse-scale">Input values</label>
+        <select id="gse-scale">
+          <option value="auto">Apply preprocessing (intensities, counts or beta values)</option>
+          <option value="processed">Already processed (normalized expression or M-values)</option>
+        </select>
+      </div>
+      <button class="analyze-btn" id="submit-btn-gse" onclick="submitGseJob()">Analyze</button>
+    </div>
+  </div>
+
+  <!-- Upload panel -->
+  <div class="tab-panel" id="panel-upload">
+    <div class="card">
+      <h3>Upload Your Own Data</h3>
+      <p class="desc">Upload a features × samples matrix and, optionally, a sample-group labels file to unlock classification and differential analysis.</p>
+
+      <div class="field">
+        <label for="datatype-select">Data type</label>
+        <select id="datatype-select">
+          <option value="microarray">Microarray</option>
+          <option value="rnaseq">RNA-seq</option>
+          <option value="methylation">DNA methylation</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="upload-scale">Input values</label>
+        <select id="upload-scale">
+          <option value="auto">Apply preprocessing (intensities, counts or beta values)</option>
+          <option value="processed">Already processed (normalized expression or M-values)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Matrix file</label>
+        <div class="dropzone" id="matrix-dropzone" onclick="document.getElementById('matrix-file-input').click()">
+          <div class="dropzone-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <div class="primary" id="matrix-primary-text">Drag &amp; drop your matrix file here</div>
+          <div class="secondary">or click to browse files</div>
+          <div class="hint">Supports .csv, .tsv, .txt and gzip (.gz), max 500MB — first column = feature ID, first row = sample names</div>
+        </div>
+        <input type="file" id="matrix-file-input" accept=".csv,.tsv,.txt,.csv.gz,.tsv.gz,.txt.gz" />
+      </div>
+
+      <div class="field">
+        <label>Labels file <span style="font-weight:400;color:var(--muted);">(optional)</span></label>
+        <div class="dropzone" id="labels-dropzone" onclick="document.getElementById('labels-file-input').click()">
+          <div class="dropzone-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <div class="primary" id="labels-primary-text">Drag &amp; drop your labels file here</div>
+          <div class="secondary">or click to browse files</div>
+          <div class="hint">Two columns: sample_id, group — enables classification &amp; differential analysis</div>
+        </div>
+        <input type="file" id="labels-file-input" accept=".csv,.tsv,.txt,.csv.gz,.tsv.gz,.txt.gz" />
+      </div>
+
+      <button class="analyze-btn" id="submit-btn-upload" onclick="submitUploadJob()">Analyze</button>
+    </div>
+  </div>
+
+  <div class="card" id="status-card">
+    <h3>Status</h3>
+    <div id="status-text">—</div>
+    <div id="report-link"></div>
+  </div>
+</main>
+
+<script>
+const API_BASE = "/api";
+
+function switchTab(tab) {
+  document.getElementById("tab-gse").classList.toggle("active", tab === "gse");
+  document.getElementById("tab-upload").classList.toggle("active", tab === "upload");
+  document.getElementById("panel-gse").classList.toggle("active", tab === "gse");
+  document.getElementById("panel-upload").classList.toggle("active", tab === "upload");
+}
+
+function wireDropzone(zoneId, inputId, primaryTextId, defaultText) {
+  const zone = document.getElementById(zoneId);
+  const input = document.getElementById(inputId);
+  const primary = document.getElementById(primaryTextId);
+
+  function showFile(file) {
+    if (file) {
+      primary.innerHTML = `<span class="filename">${file.name}</span>`;
+      zone.classList.add("has-file");
+    } else {
+      primary.textContent = defaultText;
+      zone.classList.remove("has-file");
+    }
+  }
+
+  input.addEventListener("change", () => showFile(input.files[0]));
+
+  zone.addEventListener("dragover", (e) => { e.preventDefault(); zone.classList.add("drag-over"); });
+  zone.addEventListener("dragleave", () => zone.classList.remove("drag-over"));
+  zone.addEventListener("drop", (e) => {
+    e.preventDefault();
+    zone.classList.remove("drag-over");
+    if (e.dataTransfer.files.length) {
+      input.files = e.dataTransfer.files;
+      showFile(input.files[0]);
+    }
+  });
+}
+
+wireDropzone("matrix-dropzone", "matrix-file-input", "matrix-primary-text", "Drag & drop your matrix file here");
+wireDropzone("labels-dropzone", "labels-file-input", "labels-primary-text", "Drag & drop your labels file here");
+
+function setStatus(text, cls) {
+  const card = document.getElementById("status-card");
+  const el = document.getElementById("status-text");
+  card.classList.add("visible");
+  el.textContent = text;
+  el.className = cls || "";
+}
+
+async function submitGseJob() {
+  const gseId = document.getElementById("gse-input").value.trim();
+  const btn = document.getElementById("submit-btn-gse");
+  document.getElementById("report-link").innerHTML = "";
+
+  if (!gseId) return;
+
+  btn.disabled = true;
+  setStatus("Submitting job...");
+
+  try {
+    const res = await fetch(`${API_BASE}/analyze`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ gseId, dataType: document.getElementById("gse-datatype").value || undefined,
+                             dataScale: document.getElementById("gse-scale").value }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Failed to submit");
+
+    pollStatus(data.jobId, btn);
+  } catch (err) {
+    setStatus(`Error: ${err.message}`, "error");
+    btn.disabled = false;
+  }
+}
+
+async function submitUploadJob() {
+  const btn = document.getElementById("submit-btn-upload");
+  document.getElementById("report-link").innerHTML = "";
+
+  const matrixInput = document.getElementById("matrix-file-input");
+  const labelsInput = document.getElementById("labels-file-input");
+  const dataType = document.getElementById("datatype-select").value;
+
+  if (!matrixInput.files.length) {
+    setStatus("Choose a matrix file first.", "error");
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append("matrixFile", matrixInput.files[0]);
+  formData.append("dataType", dataType);
+  formData.append("dataScale", document.getElementById("upload-scale").value);
+  if (labelsInput.files.length) {
+    formData.append("labelsFile", labelsInput.files[0]);
+  }
+
+  btn.disabled = true;
+  setStatus("Uploading and submitting job...");
+
+  try {
+    const res = await fetch(`${API_BASE}/upload`, {
+      method: "POST",
+      body: formData,
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Failed to submit");
+
+    pollStatus(data.jobId, btn);
+  } catch (err) {
+    setStatus(`Error: ${err.message}`, "error");
+    btn.disabled = false;
+  }
+}
+
+async function pollStatus(jobId, btn) {
+  const linkEl = document.getElementById("report-link");
+
+  const poll = async () => {
+    try {
+    const res = await fetch(`${API_BASE}/status/${jobId}`);
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Could not read job status");
+
+    if (data.state === "completed") {
+      setStatus(`Done — ${data.dataType || "analysis complete"}`, "done");
+      linkEl.innerHTML = `<a class="report-link" href="${API_BASE}/report/${jobId}" target="_blank">Open report →</a>`;
+      btn.disabled = false;
+      return;
+    }
+    if (data.state === "failed") {
+      const error = data.error || "unknown error";
+      const summary = error.includes("Traceback (most recent call last)")
+        ? error.trim().split(/\r?\n/).filter(Boolean).pop() : error;
+      setStatus(`Failed: ${summary}`, "error");
+      btn.disabled = false;
+      return;
+    }
+
+    setStatus(data.message || `${data.state}${data.step ? " — " + data.step : ""}${data.dataType ? " (" + data.dataType + ")" : ""}`);
+    } catch (err) {
+      setStatus(`Status unavailable: ${err.message}. Retrying...`, "error");
+    }
+    setTimeout(poll, 2000);
+  };
+
+  poll();
+}
+</script>
+
+</body>
+</html>
